@@ -9,11 +9,13 @@ html {
 }
 
 body {
+  min-height: 100%;
   font-family: "Lato", sans-serif;
   background: url("bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  overflow: hidden;
 }
 
 h2 {
@@ -44,6 +46,7 @@ h2 {
 }
 
 @media (max-width: 600px) {
+  
   h2 {
     font-size: 3rem;
     text-align: center;
@@ -53,15 +56,15 @@ h2 {
   .hour,
   .minute,
   .second {
-    font-size: 3rem;
-    margin: 20px;
+    font-size: 1.5rem;
   }
 
- .countdown {
-   flex-direction: column;
- }
+  .countdown {
+    justify-content: space-evenly;
+  }
 
  .holiday {
-   margin-top: 3vh;
+   margin-top: 2vh;
+   width: 100%;
  }
 }
