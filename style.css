@@ -9,7 +9,6 @@ html {
 }
 
 body {
-  height: 100%;
   font-family: "Lato", sans-serif;
   background: url("bg.jpg");
   background-repeat: no-repeat;
@@ -25,7 +24,6 @@ h2 {
 
 .holiday {
   color: white;
-  min-height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -43,4 +41,27 @@ h2 {
 .minute,
 .second {
   font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .day,
+  .hour,
+  .minute,
+  .second {
+    font-size: 3rem;
+    margin: 20px;
+  }
+
+ .countdown {
+   flex-direction: column;
+ }
+
+ .holiday {
+   margin-top: 3vh;
+ }
 }
